@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        h2 {
+            text-align: center;
+        }
+        input, textarea {
+            width: 100%;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Create Profile</h2>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="text" id="dob" name="dob" placeholder="dd/mm/yyyy" required><br><br>
+
+        <label for="age">Enter Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="currentAddress">Current Address:</label><br>
+        <textarea id="currentAddress" name="currentAddress" rows="4" cols="50"></textarea><br><br>
+
+        <label for="permanentAddress">Permanent Address:</label><br>
+        <textarea id="permanentAddress" name="permanentAddress" rows="4" cols="50"></textarea><br><br>
+
+        <button type="submit">Create</button>
+    </form>
+</body>
+</html>

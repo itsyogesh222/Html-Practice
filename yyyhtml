@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITCART - Ecommerce</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: #000;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        /* Dropdown styling */
+        nav ul li .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        nav ul li .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        nav ul li .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav ul li .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        nav ul li .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Search Bar Styling */
+        nav .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        nav input[type="text"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        nav button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            margin-left: 5px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Sidebar styling */
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        .sidebar {
+            width: 20%;
+            padding-right: 20px;
+        }
+
+        .sidebar h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a:hover {
+            color: #007bff;
+        }
+
+        /* Main content styling */
+        .main-content {
+            width: 80%;
+        }
+
+        .main-content h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .main-content a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .main-content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">ITCART</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="dropdown">
+                <a href="#">Account</a>
+                <div class="dropdown-content">
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                </div>
+            </li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search site">
+            <button>Search</button>
+        </div>
+    </nav>
+
+    <!-- Page Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>Categories Available</h3>
+            <a href="#">Laptops</a>
+            <a href="#">Personal Computers</a>
+            <a href="#">Tablets</a>
+            <a href="#">Headphones</a>
+
+            <h3>Reviews</h3>
+            <a href="#">For Services</a>
+            <a href="#">For Products</a>
+            <a href="#">For Consultation</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1>India’s Leading and Trusted tech paradise - <a href="#">ITCART</a></h1>
+            <p>Welcome to our tech paradise, where innovation meets convenience at the click of a button. Step into a world of cutting-edge technology and endless possibilities as you explore our curated collection of IT goods. From sleek laptops to powerful desktops, from state-of-the-art gadgets to must-have accessories, we have everything you need to stay ahead in the digital age. Whether you’re a tech enthusiast, a professional, or simply looking to upgrade your devices, our comprehensive range has something for every need and budget.</p>
+
+            <p>Navigate our user-friendly interface with ease, and discover the latest in tech trends and innovations. With detailed product descriptions and customer reviews, making informed decisions has never been easier. Experience unmatched convenience with our secure payment options and lightning-fast delivery services, ensuring that your tech essentials reach you when you need them most. Plus, with our dedicated customer support team, assistance is just a click away. Join our community of tech aficionados and elevate your digital lifestyle today. Welcome to ITCART, where the future is just a few clicks away!"</p>
+        </div>
+    </div>
+
+</body>
+</html>

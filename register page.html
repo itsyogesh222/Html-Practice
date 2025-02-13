@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile</title>
+    <style>
+    .container{
+      text-align: center;
+      margin-top: 20;
+    }
+    table{
+      text-align: center;
+      padding-left: 450;
+    }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Create Profile</h2>
+    <form>
+       <b> <label for="firstName">First Name:</label></b>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required><br><br>
+
+        <b><label for="lastName">Last Name:</label></b>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required><br><br>
+
+      <b>  <label for="dob">Date of Birth:</label></b>
+        <input type="date" id="dob" name="dob" placeholder="dd/mm/yyyy"  required><br><br>
+
+        <b><label for="age">Enter Age:</label></b>
+        <input type="text" id="age" name="age" required><br>
+        
+
+      <b>  <label>Gender:</label></b>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        
+
+        <b><label for="currentAddress">Current Address:</label><br></b>
+        <textarea id="currentAddress" name="currentAddress" rows="8" cols="50"></textarea><br><br>
+
+        <b><label for="permanentAddress">Permanent Address:</label><br></b>
+        <textarea id="permanentAddress" name="permanentAddress" rows="8" cols="50"></textarea><br><br>
+
+        <button type="submit">Create</button>
+    </form>
+  </div>
+</body>
+</html>

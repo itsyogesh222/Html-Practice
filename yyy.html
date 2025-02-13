@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>
+            Login Form
+        </title>
+
+        <style>
+             body{
+             font-family: Arial,sans-serif;
+             background-color: white;
+             height: 100vh;
+             margin: 0;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             }
+             .login-box{
+
+                background-color: #F1E7BA;
+                padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+
+             }
+             .login-box label {
+            display: block;
+            color: white;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+             
+            
+
+             
+             .login-box input[type="text"],
+             .login-box input[type="password"] {
+           
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+             }
+
+             .login-box button  {
+
+            width: 100%;
+            padding: 10px;
+            background-color: #E84420;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+             }
+             .login-box button:hover{
+                background-color: #d63b1c;
+             }
+
+        </style>
+    </head>
+    <body>
+        <div class="login-box">
+            <form>
+                <lable for="username">Enter Username:</lable>
+                <input type="text" id="username" placeholder="Enter Email Id">
+                <label for="password">Enter Password:</label>
+                <input type="password" id="Password" placeholder="Enter Password Here">
+
+
+                <button type="button">Login</button>
+            </form>
+        </div>
+    </body>
+</html>
